@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maya Dev Docs</title>
+  <meta name="description" content="Fast offline reference for Maya commands, OpenMaya and node types.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2314b8a6'/><text x='16' y='23' font-size='19' font-family='monospace' font-weight='700' text-anchor='middle' fill='white'>M</text></svg>">
+  <link rel="stylesheet" href="style.css?v=6d1602e6">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="logo">M</span><span>maya<b>doc</b></span></a>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search commands, OpenMaya, nodes…" autocomplete="off" spellcheck="false" aria-label="Search">
+      <kbd>/</kbd>
+    </div>
+    <select id="version" aria-label="Maya version"></select>
+    <button id="theme" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">◐</button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="kinds" id="kinds"></nav>
+      <div class="list-meta" id="listMeta"></div>
+      <ul class="list" id="list" role="listbox"></ul>
+    </aside>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js?v=e806a928"></script>
+</body>
+</html>
